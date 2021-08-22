@@ -3,7 +3,7 @@
 
 using namespace std;
 
-// Function name is sort of confusing, it gets user input but it's a 'setter' function
+// Using "take" because it will "get" user input but "set" the class variable
 void pigLatin::takeUserInput()
 {
     cout << "Welcome to the pig latin translator! Input string to be translated:" << endl;
@@ -29,10 +29,9 @@ bool pigLatin::isVowel(char letter)
 
 void pigLatin::translate()
 {
-    // Another idea - this could be done using string size_type without iterators
     for (auto idx = userInput.begin(); idx != userInput.end(); ++idx)
     {
-        // if we have a vowel, write it to the pig latin output
+        // if we have a vowel, write it to the output
         if (isVowel(*idx))
         {
             plOutput += *idx;

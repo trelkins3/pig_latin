@@ -12,6 +12,7 @@ private:
     string userInput;
     string buffer;
     string plOutput;
+
 public:
     void takeUserInput();
     // TODO: void validateInput();
